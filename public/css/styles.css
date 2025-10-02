@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-and-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-icon-img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+
+.user-icons img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1; 
+    justify-content: space-between;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.main-visual {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.carousel-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.carousel-images img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.footer-links p img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.btn-inquiry {
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 0;
+    margin-left: 10px;
+}
+
+/* --- 회원가입 페이지 스타일 추가 --- */
+.signup-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label {
+    width: 120px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-with-button {
+    display: flex;
+    flex-grow: 1;
+}
+
+.input-with-button input {
+    flex-grow: 1;
+    border-right: none;
+}
+
+.btn-check {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-signup {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+/* --- 로그인 페이지 스타일 추가 --- */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.login-links {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #666;
+}
