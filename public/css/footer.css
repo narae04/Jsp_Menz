@@ -1,0 +1,51 @@
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-text {
+    text-align: left;
+    min-width: 200px;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.footer-links p img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-instargram {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.btn-inquiry {
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+    text-decoration: none;
+    margin-left: 10px;
+}

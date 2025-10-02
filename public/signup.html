@@ -4,40 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <h1 class="logo"><a href="index.html">Menz</a></h1>
-            <div class="search-and-icons">
-                <div class="search-bar-container">
-                    <input type="text" placeholder="검색" class="search-input">
-                    <img src="search.svg" alt="검색 아이콘" class="search-icon-img">
-                </div>
-                <div class="user-icons">
-                    <img src="cart.svg" alt="장바구니 아이콘">
-                    <img src="mypage.svg" alt="마이페이지 아이콘">
-                </div>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Best</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Outer</a></li>
-                <li><a href="#">Top</a></li>
-                <li><a href="#">Bottom</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Acc</a></li>
-            </ul>
-            <div class="auth-links">
-                <a href="login.html">로그인</a>
-                <a href="signup.html">회원가입</a>
-            </div>
-        </nav>
-    </header>
+    <!-- 헤더 포함 -->
+    <div id="header"></div>
 
+    <!-- 메인 영역 -->
     <main>
         <section class="signup-container">
             <h2>회원가입</h2>
@@ -76,26 +52,19 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-text">
-                <p>어디에서도 누구보다도 트렌디하게<br>당신의 스타일을 완성하다.</p>
-                <p>Trendier than anyone, anywhere<br>perfect your style.</p>
-            </div>
-            <div class="footer-links">
-                <p><a href="#"><img src="instargram.svg" alt="인스타그램 아이콘"></a> www.instargram.com</p>
-                <p><a href="#"><img src="youtube.svg" alt="유튜브 아이콘"></a> www.youtube.com</p>
-                <p><a href="#"><img src="mail.svg" alt="메일 아이콘"></a> mailmail@gmail.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>
-                <a href="#">고객 지원</a> 
-                <a href="#" class="btn-inquiry">1:1 문의하기</a> | 
-                <a href="#">FAQ 자주 묻는 질문</a> | 
-                <a href="#">정책 문의</a>
-            </p>
-        </div>
-    </footer>
+    <!-- 푸터 포함 -->
+    <div id="footer"></div>
+
+    <script>
+        // 헤더 불러오기
+        fetch('header.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+
+        // 푸터 불러오기
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
 </body>
 </html>
